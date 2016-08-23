@@ -24,7 +24,7 @@ if ( $page_layout == 'full-width' ) {
 }
 ?>
 
-<?php if ( !is_front_page() ) {?>
+<?php if ( !is_front_page() && ! is_page() ) {?>
 <div class="page-header">
 	<h1 class="page-title"><?php the_title(); ?></h1>
 	<?php woocommerce_breadcrumb(); ?>
